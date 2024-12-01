@@ -23,5 +23,6 @@ employeesList
     const li = document.createElement('li');
 
     li.textContent = `${employee.name}`;
+    li.setAttribute('data-salary', employee.salary);
     ulElement.appendChild(li);
   });
